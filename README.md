@@ -1,4 +1,4 @@
-# Segundo-Semestre-ENG-de-Software
+# 2º Semestre Engenharia de Software
 
 ### 📚 Disciplinas do Segundo Semestre
 
