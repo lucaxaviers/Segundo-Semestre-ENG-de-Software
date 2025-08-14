@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int A = 5;
+    int B = 13;
+    int temp;  
+
+    temp = A;
+    A = B;     
+    B = temp; 
+
+    printf("Depois da troca:\n");
+    printf("A = %d\n", A);
+    printf("B = %d\n", B);
+
+    return 0;
+}
