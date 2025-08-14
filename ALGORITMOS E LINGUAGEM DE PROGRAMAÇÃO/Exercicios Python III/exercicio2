@@ -7,7 +7,7 @@ int main() {
     printf("Digite um numero (zero para parar): ");
     scanf("%d", &numero);
 
-    if (numero != 0) { // só inicializa se não for zero
+    if (numero != 0) { 
         min = numero;
         max = numero;
         cont++;
@@ -17,7 +17,7 @@ int main() {
         printf("Digite um numero (zero para parar): ");
         scanf("%d", &numero);
 
-        if (numero != 0) { // evita contar/comparar o zero
+        if (numero != 0) { 
             if (numero > max) {
                 max = numero;
             } else if (numero < min) {
