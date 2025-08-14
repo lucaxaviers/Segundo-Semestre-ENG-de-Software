@@ -14,7 +14,7 @@ int main() {
         for (int i = 2; i < num; i++) {
             if (num % i == 0) {
                 eh_primo = false;
-                break; // Já provado que não é primo
+                break; // já provou que não é primo
             }
         }
     }
@@ -26,3 +26,4 @@ int main() {
 
     return 0;
 }
+
