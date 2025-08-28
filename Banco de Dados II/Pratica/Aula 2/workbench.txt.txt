@@ -1,0 +1,20 @@
+CREATE TABLE usuarios (
+    id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    sobrenome VARCHAR(100) NOT NULL,
+    data_nasci DATE NOT NULL,
+    cpf CHAR(11) NOT NULL,
+    sexo CHAR(1) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    logradouro VARCHAR(100) NOT NULL,
+    numero VARCHAR(10) NOT NULL,
+    complemento VARCHAR(50),
+    bairro VARCHAR(60) NOT NULL,
+    cidade VARCHAR(60) NOT NULL,
+    estado CHAR(2) NOT NULL,
+    cep CHAR(8) NOT NULL,
+    telefone VARCHAR(15) NOT NULL,
+    PRIMARY KEY (id),
+    UNIQUE (email),
+    UNIQUE (cpf)
+);
