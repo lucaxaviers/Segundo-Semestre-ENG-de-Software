@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+    int num;
+    bool eh_primo = true;
+
+    printf("Digite um número inteiro: ");
+    scanf("%d", &num);
+
+    if (num <= 1) {
+        eh_primo = false; // 0 e 1 não são primos
+    } else {
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                eh_primo = false;
+                break; // já provou que não é primo
+            }
+        }
+    }
+
+    if (eh_primo)
+        printf("%d é um número primo.\n", num);
+    else
+        printf("%d NÃO é um número primo.\n", num);
+
+    return 0;
+}
+

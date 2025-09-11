@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int idade;
+    float peso;
+
+    printf("Digite a idade: ");
+    scanf("%d", &idade);
+
+    printf("Digite o peso (kg): ");
+    scanf("%f", &peso);
+
+    if (
+idade>=16&&idade<=69&&peso>= 50
+        ) 
+   {
+        printf("Apto para doar sangue.");
+    } else {
+        printf("Nao apto para doar sangue.");
+    }
+    return 0;
+}
