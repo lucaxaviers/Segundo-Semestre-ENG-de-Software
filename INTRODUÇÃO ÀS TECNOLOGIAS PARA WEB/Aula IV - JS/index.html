@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calcular IMC</title>
+    <link href="/IMC/styles/base.css" rel="stylesheet" type="text/css"/>
+
+    <script>
+        //Versão 1  - Errada
+        /*
+        function calcularIMC(peso, altura){
+            return  peso/(altura*altura);
+            return imc;
+        }
+        */
+
+        //Versão 2  - Correta
+        function calcularIMC(peso, altura){
+            return peso / (altura * altura);
+        }
+
+        function executarCalculo(){
+            /*
+                Obter os dados digitados pelo usuário no formulario,
+                nos campos txtPeso e TxtAltura.
+                atribuímos os dados em constantes para, fazermos o calculo
+
+                document(representa todo o html) quando usamos a função "getElementById", 
+                será retornado o elemento inteiro.
+                Então, queremos o apenas o atributo value do elemnto input (não o elemnto inteiro)
+            */
+            const p = parseFloat(document.getElementById("txtPeso").value); // conversão para número
+            console.log(p);
+
+            const a = parseFloat(document.getElementById("txtAltura").value); // conversão para número
+            console.log(a);
+
+            // Validação simples
+            if (!(p > 0) || !(a > 0)) {
+                alert("Digite valores válidos para peso e altura.");
+                return;
+            }
+
+            const imc = calcularIMC(p, a);
+
+            /*
+                Vamos usar a impressão de console
+                Console é um recurso do inspector(inspetor)
+                que ajuda o programador a verificar o que está 
+                acontecendo
+            */
+
+            console.log("O valor do IMC é: " + imc);
+
+            document.getElementById("resultado").innerText =
+                "Altura: " + a + " m\n" +
+                "Peso: " + p + " kg\n" +
+                "Seu é IMC: " + imc.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h1>Calcular IMC</h1>
+    <p>Preencha todos os campos</p>
+
+    <label for="txtAltura">Altura:</label><br/>
+    <p class="hint">
+        (Em metro, usando ponto. Exemplo: 1.50, 1.77 etc)
+    </p>
+    <input id="txtAltura" type="text" required><br/><br/>
+
+    <label for="txtPeso">Peso:</label><br/>
+    <p class="hint">
+        (Em kg, usando ponto ou não. Exemplos: 72.5, 90.5, 90.0 ou 90)
+    </p>
+    <input id="txtPeso" type="text" required><br/><br/>
+
+    <button id="btnCalcularIMC" onclick="executarCalculo();">Calcular</button>
+
+    <h2 id="resultado"></h2>
+</body>
+</html>
