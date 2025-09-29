@@ -1,28 +1,30 @@
 #include <stdio.h>
-#include <ctype.h>  
+#include <string.h>
 
-int main() {
-    char texto[100];
-    int vogais = 0, consoantes = 0;
-
-    printf("Digite uma palavra ou texto (sem espaços): ");
-    scanf("%s", texto); 
-
-    for (int i = 0; texto[i] != '\0'; i++) {
-        char c = tolower(texto[i]);  
-        if (c >= 'a' && c <= 'z') {  
-            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
-            {
-                vogais++;
-            } else 
-            {
-                consoantes++;
-            }
+int main()
+{
+    char palavra[50];
+    int contconsoante = 0, contvogal = 0;
+    
+    printf("Digite uma palavra:  ");
+    scanf("%[^\n]", palavra);
+    
+    int len = strlen(palavra);
+    
+    for( int x = 0; x < len; x++){
+        
+        char i = palavra[x];
+        
+        if( i == 'a' || i == 'e' || i == 'i' || i == 'o' || i == 'u'){
+            contvogal++;
+        }
+        else{
+            contconsoante++;
         }
     }
-
-    printf("Vogais: %d\n", vogais);
-    printf("Consoantes: %d\n", consoantes);
+    
+    printf("Vogais: %d \n", contvogal);
+    printf("Consotantes: %d", contconsoante);
 
     return 0;
 }
