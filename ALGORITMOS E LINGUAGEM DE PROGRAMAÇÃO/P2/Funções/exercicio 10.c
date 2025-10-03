@@ -1,5 +1,5 @@
 #include <stdio.h>
-void PrintVector(int sz, int vec[sz])
+void printVetor(int sz, int vec[sz])
 {
     for(int i = 0; i < sz; i++){
         printf("%d \n", vec[i]);
@@ -19,7 +19,7 @@ int main()
         scanf(" %d", &vetor[i]);
     }
     
-    PrintVector(sz, vetor);
+    printVetor(sz, vetor);
 
     return 0;
 }
