@@ -2,9 +2,9 @@
 #include <stdbool.h>
 
 bool ehPrimo(int n, int i) {
-    if (n <= 1) return false;
-    if (i == 1) return true;
-    if (n % i == 0) return false;
+    if (n <= 1){ 
+        return 1;
+    }
     return ehPrimo(n, i - 1);
 }
 
