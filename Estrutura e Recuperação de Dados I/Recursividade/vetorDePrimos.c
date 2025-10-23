@@ -1,8 +1,3 @@
-Perfeito 👍 Aqui está o mesmo código, sem comentários:
-
-⸻
-
-
 #include <stdio.h>
 
 int validarPrimo(int numero, int divisor) {
