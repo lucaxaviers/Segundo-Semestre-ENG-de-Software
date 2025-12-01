@@ -4,4 +4,4 @@ export function classificarAno(ano: number): string {
   }
   return "NORMAL";
 }
-classficicarAno(2025);
+classificarAno(2025);
