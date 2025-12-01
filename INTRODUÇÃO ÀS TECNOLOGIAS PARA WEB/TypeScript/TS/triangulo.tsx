@@ -28,3 +28,5 @@ export function classificarTriangulo(
 
   return "NAO FORMA TRIANGULO";
 }
+
+classificarTriangulo(3, 4, 5);
