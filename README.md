@@ -1,33 +1,51 @@
+<div align="center">
+
 # 🎓 Engenharia de Software — 2º Semestre
+### **Pontifícia Universidade Católica de Campinas (PUC-Campinas)**
 
-[![Linguagem](https://img.shields.io/badge/C%20%2F%20C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
-[![Database](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![Web](https://img.shields.io/badge/HTML5%20%2F%20CSS3%20%2F%20JS-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/)
-[![Instituição](https://img.shields.io/badge/PUC--Campinas-Engenharia_de_Software-B22222?style=for-the-badge)](https://www.puc-campinas.edu.br/)
+<p align="center">
+  <img src="https://img.shields.io/badge/C%20%2F%20C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Web-HTML5%2FCSS3%2FJS-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="Web" />
+  <img src="https://img.shields.io/badge/PUC--Campinas-Engenharia_de_Software-B22222?style=for-the-badge" alt="PUC-Campinas" />
+</p>
 
-Repositório dedicado ao armazenamento e versionamento de todos os projetos, algoritmos, laboratórios práticos e listas de exercícios desenvolvidos durante o **Segundo Semestre** do curso de **Engenharia de Software** na **PUC-Campinas**.
+<p align="center">
+  Repositório dedicado ao armazenamento e versionamento de todos os projetos, algoritmos, laboratórios práticos e listas desenvolvidos durante o segundo semestre.
+</p>
 
 ---
+
+</div>
 
 ## 📚 Disciplinas Cursadas
 
-Neste repositório, você encontrará diretórios organizados por matéria, contendo todo o material prático e teórico desenvolvido ao longo do semestre:
+### 💻 Algoritmos e Linguagem de Programação (C/C++)
+- Alocação dinâmica de memória (`malloc`, `calloc`, `free`).
+- Ponteiros, aritmética de ponteiros e manipulação de buffers.
+- Estruturas heterogêneas de dados (`struct`, `typedef`) e modularização.
 
-- **💻 Algoritmos e Linguagem de Programação:** Lógica avançada em linguagem C/C++, ponteiros, alocação dinâmica de memória e funções modulares.
-- **🗄️ Banco de Dados II:** Modelagem relacional avançada, normalização (1FN, 2FN, 3FN), criação de índices, triggers, procedures e otimização de consultas SQL.
-- **📐 Engenharia e Elicitação de Requisitos:** Técnicas de levantamento e documentação de requisitos funcionais e não-funcionais, regras de negócio e diagramas de casos de uso.
-- **🏗️ Estrutura e Recuperação de Dados I:** Implementação manual de estruturas de dados fundamentais (pilhas, filas, listas encadeadas, árvores binárias) e algoritmos de busca/ordenação.
-- **🌐 Introdução às Tecnologias para Web:** Fundamentos de front-end (HTML5, CSS3, JavaScript Vanilla), layout responsivo e arquitetura cliente-servidor.
+### 🗄️ Banco de Dados II (MySQL)
+- Modelagem relacional avançada e normalização (1FN, 2FN, 3FN).
+- Criação de Stored Procedures, Triggers, Views e Índices.
+- Controle de concorrência e transações ACID (`COMMIT`, `ROLLBACK`).
+
+### 📐 Engenharia e Elicitação de Requisitos
+- Mapeamento e documentação de Requisitos Funcionais (RF) e Não-Funcionais (RNF).
+- Regras de negócio, histórias de usuário (*User Stories*) e critérios de aceitação.
+- Diagramas UML de Casos de Uso.
+
+### 🏗️ Estrutura e Recuperação de Dados I
+- Implementação de Pilhas (LIFO), Filas (FIFO) e Listas Encadeadas (simples e duplas).
+- Algoritmos de ordenação (*Bubble Sort*, *Insertion Sort*, *Quick Sort*).
+- Análise assintótica de complexidade (Notação Big-O).
+
+### 🌐 Introdução às Tecnologias para Web
+- Estruturação semântica com HTML5 e estilização responsiva com CSS3.
+- Manipulação dinâmica da árvore DOM com JavaScript Vanilla.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
-
-- **Linguagens:** C, C++, JavaScript, SQL
-- **Banco de Dados:** MySQL 8.0+
-- **Ferramentas:** VS Code, GCC/G++, Git, GitHub
-
----
-
-> **Desenvolvido por Lucas Rodrigues Xavier**  
-> *Graduando em Engenharia de Software — PUC-Campinas*
+<div align="center">
+  <sub>Graduação em Engenharia de Software — PUC-Campinas</sub>
+</div>
