@@ -1,0 +1,89 @@
+/* Seletor por TAG*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0px;
+    
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color:#1f4e79
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Seletor por ID */
+#cabecalho {
+    background-color: #1f4e79;
+    padding: 30px;
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
+.caixa {
+    background-color: white;
+    width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.destaque {
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #fff3cd;
+    padding: 10px;
+}
+
+.caixa-importante {
+    border: 3px solid #ff0000;
+}
+
+.quadrado {
+    width: 150px;
+    height: 100px;
+    background-color: #5dade2;
+    color: white;
+    border: 2px solid #1f4e79;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.box-model {
+    width: 300px;
+    padding: 30px;
+    border: 5px solid #e67e22;
+    margin: 30px;
+    background-color: #fdebd0;
+}
+
+.card {
+    background-color: #eaf2f8;
+    width: 300px;
+    border: 1px solid #5dade2;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.card h3 {
+    color: #1f4e79;
+}
+
+#rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 100px;
+    margin-top: 30px;
+}

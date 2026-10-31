@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="formularios.css">
+</head>
+<body>
+        <header
+          class="d-flex flex-wrap justify-content-center py-3 mb-5 border-bottom"
+        >
+          <a href="/"class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Simple header</span>
+          </a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">Inicio</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Cadastro</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Alteração</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Listagem</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+          </ul>
+        </header>
+
+    <!--
+      Cada campo fica em uma .linha.
+      Em telas largas (>= 768px), duas linhas ficam lado a lado.
+      Em telas estreitas, cada campo ocupa a largura inteira.
+      A classe linha-completa força o campo a ocupar 100% também no desktop.
+    -->
+    <form>
+        <div class="linha linha-completa">
+            <label for="nome_id">Nome: </label>
+            <input type="text" name="Nome" id="nome_id"
+                placeholder="Digite o seu nome completo">
+        </div>
+
+        <div class="linha">
+            <label for="busca_id">Busca: </label>
+            <input type="search" name="busca" id="busca_id">
+        </div>
+
+        <div class="linha">
+            <label for="idade_id">Idade: </label>
+            <input type="number" name="idade" id="idade_id" min="18" max="100" step="2">
+        </div>
+
+        <div class="linha">
+            <label for="qtde_id">Quantidade: </label>
+            <input type="range" name="quantidade" id="qtde_id" min="18" max="100" step="2">
+        </div>
+
+        <div class="linha">
+            <label for="email_id">Email: </label>
+            <input type="email" name="email" id="email_id">
+        </div>
+
+        <div class="linha">
+            <label for="telefone_id">Telefone: </label>
+            <input type="tel" name="telefone" id="telefone_id">
+        </div>
+
+        <div class="linha">
+            <label for="link_id">Link: </label>
+            <input type="url" name="link" id="link_id">
+        </div>
+
+        <div class="linha">
+            <label for="data_id">Data: </label>
+            <input type="date" name="data" id="data_id">
+        </div>
+
+        <div class="linha">
+            <label for="dataHora_id">Data e Hora: </label>
+            <input type="datetime-local" name="dataHora" id="dataHora_id">
+        </div>
+
+        <div class="linha">
+            <label for="mes_id">Mês: </label>
+            <input type="month" name="mês" id="mes_id">
+        </div>
+
+        <div class="linha">
+            <label for="semana_id">Semana: </label>
+            <input type="week" name="semana" id="semana_id">
+        </div>
+
+        <div class="linha">
+            <label for="senha_id">Senha: </label>
+            <input type="password" name="senha" id="senha_id">
+        </div>
+
+        <div class="linha linha-completa">
+            <label for="texto_id">Text: </label>
+            <textarea id="texto_id" name="texto" rows="5" maxlength="200">
+            Meu texto
+            </textarea>
+        </div>
+
+        <div class="linha">
+            <label for="check1">
+            <input type="checkbox" id="check1" value="Valor 1" name="Grupo 1">
+            Sim
+            </label>
+        </div>
+
+        <div class="linha">
+            <label for="opcaoSim_id">
+                <input type="radio" id="opcaoSim_id" value="Sim" name="Resposta" checked>
+                Sim
+            </label>
+            <label for="opcaoNao_id">
+                <input type="radio" id="opcaoNao_id" value="Nao" name="Resposta">
+                Não
+            </label>
+            <label for="opcaoTalvez_id">
+                <input type="radio" id="opcaoTalvez_id" value="Talvez" name="Resposta">
+                Talvez
+            </label>
+        </div>
+
+        <div class="linha">
+            <label for="cor_id">Cor: </label>
+            <input type="color" name="cor" id="cor_id">
+        </div>
+
+        <div class="linha">
+            <label for="estados_id">Estados: </label>
+            <select id="estados_id" name="Estados">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espirito Santo</option>
+            </select>
+        </div>
+
+        <div class="linha">
+            <label for="estados_multi_id">Estados: </label>
+            <select id="estados_multi_id" name="Estados" multiple>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espirito Santo</option>
+            </select>
+        </div>
+
+        <div class="linha">
+            <label for="estados_grupo_id">Estados: </label>
+            <select id="estados_grupo_id" name="Estados">
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <datalist id="comidas_id">
+            <option value="Lasanha" ></option>
+            <option value="Pizza" ></option>
+            <option value="Sopa"></option>
+            <option value="Salada"></option>
+        </datalist>
+
+        <div class="linha">
+            <label for="comida_id">Comida: </label>
+            <input type="text" name="comida" id="comida_id" list="comidas_id">
+        </div>
+
+        <div class="linha linha-completa">
+            <input id="botaoEnviar_id" type="submit" value="Enviar">
+            <input id="botaoreset_id" type="reset" value="Reiniciar">
+        </div>
+
+        <div class="linha linha-completa">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <input id="botaoEnviar_fieldset_id" type="submit" value="Enviar">
+            </fieldset>
+        </div>
+    </form>
+
+</body>
+</html>

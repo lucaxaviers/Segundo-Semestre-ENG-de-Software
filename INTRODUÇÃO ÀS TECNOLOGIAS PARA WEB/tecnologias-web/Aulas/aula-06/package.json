@@ -1,0 +1,20 @@
+{
+  "name": "aula06-backend-express-ts",
+  "version": "1.0.0",
+  "description": "Primeiro servidor backend com Node.js, TypeScript e Express - Aula 06 ITW PUC-Campinas",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node lib/index.js",
+    "dev": "tsc-watch --onSuccess \"node ./lib/index.js\""
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.0",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.3.3"
+  }
+}

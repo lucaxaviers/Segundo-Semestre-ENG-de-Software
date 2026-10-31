@@ -1,0 +1,125 @@
+/* 
+  CSS próprio da página.
+  O Bootstrap já oferece várias classes prontas,
+  mas este arquivo permite personalizar a identidade visual.
+*/
+
+/* Configuração geral */
+body {
+  background-color: #f4f6f8;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Título principal */
+.titulo-principal {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+/* Texto introdutório */
+.texto-introducao {
+  max-width: 900px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Personalização dos cards */
+.card {
+  border-radius: 12px;
+}
+
+/* Cards do resumo */
+.card-resumo {
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito ao passar o mouse sobre o card */
+.card-resumo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Número dos cards */
+.numero-card {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Labels dos formulários */
+.form-label {
+  font-weight: 600;
+}
+
+/* Tabela */
+.table {
+  background-color: white;
+}
+
+/* Links do menu */
+.nav-link {
+  margin-left: 16px;
+}
+
+/* Botões dentro da tabela */
+td .btn {
+  margin: 2px;
+}
+
+/* 
+  Media query:
+  quando a tela tiver até 768px,
+  alguns elementos serão ajustados.
+*/
+@media (max-width: 768px) {
+
+  .titulo-principal {
+    font-size: 1.6rem;
+  }
+
+  .texto-introducao {
+    font-size: 1rem;
+  }
+
+  .menu-links {
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    display: block;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .numero-card {
+    font-size: 1.6rem;
+  }
+}
+
+/* 
+  Media query para telas muito pequenas.
+*/
+@media (max-width: 480px) {
+
+  main.container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .titulo-principal {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}

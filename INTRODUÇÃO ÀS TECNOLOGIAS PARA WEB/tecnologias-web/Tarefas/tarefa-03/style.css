@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.cabecalho {
+    background-color: #1f4e79;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+}
+
+.apresentacao {
+    padding: 70px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apresentacao-texto {
+    width: 400px;
+}
+
+.apresentacao h2 {
+    color: #1f4e79;
+    font-size: 30px;
+}
+
+.apresentacao p {
+    font-size: 16px;
+}
+
+.botao {
+    background-color: #1f4e79;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.destaque {
+    width: 150px;
+    height: 100px;
+    border: 1px solid #5dade2;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.numero {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1f4e79;
+}
+
+.texto-alunos {
+    font-size: 14px;
+}
+
+.secao-cursos {
+    padding: 30px;
+    text-align: center;
+}
+
+.secao-cursos h2 {
+    color: #1f4e79;
+}
+
+.cursos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.curso {
+    background-color: white;
+    width: 180px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+}
+
+.curso h3 {
+    color: #1f4e79;
+}
+
+.curso p {
+    font-size: 14px;
+}
+
+.carga-horaria {
+    color: #355e3b;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.botao-curso {
+    background-color: #1f4e79;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

@@ -1,0 +1,74 @@
+### ===========================================================================
+### ARQUIVO DE TESTES HTTP (REST Client / Thunder Client / Insomnia)
+### Aula 07 - Rotas e API REST
+### ===========================================================================
+
+### 1. Testar se o servidor está funcionando
+GET http://localhost:3000/
+
+###
+
+### 2. Listar todos os alunos cadastrados (GET /alunos)
+GET http://localhost:3000/alunos
+
+###
+
+### 3. Buscar aluno específico por ID existente (GET /alunos/:id -> 200 OK)
+GET http://localhost:3000/alunos/1
+
+###
+
+### 4. Buscar aluno por ID inexistente (GET /alunos/:id -> 404 Not Found)
+GET http://localhost:3000/alunos/999
+
+###
+
+### 5. Cadastrar novo aluno com sucesso (POST /alunos -> 201 Created)
+POST http://localhost:3000/alunos
+Content-Type: application/json
+
+{
+  "nome": "Bruno Henrique Lima",
+  "email": "bruno@instituicao.edu.br",
+  "curso": "Ciência da Computação",
+  "semestre": 4
+}
+
+###
+
+### 6. Testar validação no cadastro: campos faltando (POST /alunos -> 400 Bad Request)
+POST http://localhost:3000/alunos
+Content-Type: application/json
+
+{
+  "nome": "Carlos Silva"
+}
+
+###
+
+### 7. Atualizar dados de um aluno existente (PUT /alunos/:id -> 200 OK)
+PUT http://localhost:3000/alunos/1
+Content-Type: application/json
+
+{
+  "nome": "Ana Clara Martins Atualizada",
+  "email": "anaclara@instituicao.edu.br",
+  "curso": "Engenharia de Software",
+  "semestre": 3,
+  "situacao": "Ativo"
+}
+
+###
+
+### 8. Inativar aluno (DELETE /alunos/:id -> 200 OK com inativação lógica)
+DELETE http://localhost:3000/alunos/1
+
+###
+
+### 9. Filtrar alunos por query string (GET /alunos?situacao=Inativo)
+GET http://localhost:3000/alunos?situacao=Inativo
+
+###
+
+### 10. Filtrar alunos por query string (GET /alunos?situacao=Ativo)
+GET http://localhost:3000/alunos?situacao=Ativo

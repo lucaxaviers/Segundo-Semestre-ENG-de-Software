@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+form {
+  background-color: #fff;
+  max-width: 800px;
+  padding: 20px;
+  margin: auto;
+}
+
+.linha {
+  margin-bottom: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="range"],
+input[type="color"] {
+  width: auto;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: auto;
+  margin-top: 12px;
+  margin-right: 8px;
+  padding: 6px 12px;
+}
+
+fieldset {
+  margin-top: 16px;
+}
+
+/*
+  Telas médias e grandes:
+  dois campos lado a lado.
+  Campos com a classe linha-completa continuam ocupando a linha inteira.
+*/
+@media (min-width: 768px) {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 16px;
+  }
+
+  .linha {
+    width: calc(50% - 8px);
+  }
+
+  .linha-completa {
+    width: 100%;
+  }
+}
+
+/* Telas pequenas: menos espaço e botões em coluna */
+@media (max-width: 767px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    padding: 12px;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+}

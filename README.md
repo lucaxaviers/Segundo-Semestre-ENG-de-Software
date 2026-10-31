@@ -42,7 +42,8 @@
 
 ### 🌐 Introdução às Tecnologias para Web
 - Estruturação semântica com HTML5 e estilização responsiva com CSS3.
-- Manipulação dinâmica da árvore DOM com JavaScript Vanilla.
+- Manipulação dinâmica da árvore DOM com JavaScript Vanilla e TypeScript.
+- **Laboratórios e Práticas Web:** Coleção completa de aulas, tarefas e exemplos de Bootstrap 5 em [`INTRODUÇÃO ÀS TECNOLOGIAS PARA WEB/tecnologias-web/`](INTRODU%C3%87%C3%83O%20%C3%80S%20TECNOLOGIAS%20PARA%20WEB/tecnologias-web/).
 
 ---
 

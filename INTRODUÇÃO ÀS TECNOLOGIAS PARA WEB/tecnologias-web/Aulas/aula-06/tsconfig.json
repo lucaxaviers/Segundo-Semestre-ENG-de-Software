@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noEmitOnError": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "target": "ES2020",
+    "module": "CommonJS"
+  },
+  "compileOnSave": true,
+  "include": [
+    "src/**/*"
+  ]
+}

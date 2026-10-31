@@ -1,0 +1,155 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f2f2;
+
+    margin: 0;
+
+}
+
+
+#cabecalho {
+
+    background-color: #1f4e79;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+
+.secao {
+
+    background-color: white;
+
+    width: 900px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 8px;
+
+}
+
+.exemplo-block {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: #aed6f1;
+    border: 1px solid #2980b8;
+    margin: 10px;
+    padding: 10px;
+}
+
+.exemplo-inline {
+    display: inline;
+    background-color: #abebc6;
+    border: 1px solid #239b56;
+    width: 200px;
+    height: 100px;
+}
+
+.exemplo-inline-block {
+    display: inline-block;
+    background-color: #f5b7b1;
+    border: 1px solid #c0392b;
+    margin: 5px;
+    padding: 10px;
+    width: 150px;
+    height: 30px;
+}
+
+.flex-basico {
+    display: flex;
+    border: 2px solid #333;
+    padding: 10px;
+    flex-direction: row-reverse;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #333;
+    padding: 10px;
+}
+
+.flex-justify-center {
+    display: flex;
+    border: 2px solid #333;
+    padding: 10px;
+    justify-content: center;
+}
+
+.flex-justify-between{
+    display: flex;
+    border: 2px solid #333;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.flex-align{
+    display: flex;
+    border: 2px solid #333;
+    padding: 10px;
+    height: 200px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.flex-gap{
+    display: flex;
+    border: 2px solid #333;
+    padding: 10px;
+    gap: 30px;
+}
+
+.card {
+    width: 200px;
+    height: 100px;
+    background-color: #f9e79f;
+    border: 1px solid #d4ac0d;
+    padding: 20px;
+}
+
+.flex-wrap {
+    display: flex;
+    border: 2px solid #333;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 20px 50px;
+}
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.produto{
+    width: 250px;
+    background-color: #eaf2f8;
+    border: 1px solid #5dade2;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.produto h3 {
+    color: #1f4e79;
+    font-size: 25px;
+}
+
+.preco {
+    color: #117864;
+    font-size: 20px;
+    font-weight: bold;
+}
